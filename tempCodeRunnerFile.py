@@ -1,8 +1,14 @@
-list_meses = ["janeiro", "fevereiro","março","abril","maio","junho","julho"]
-print(list_meses[0]) #primeiro
-print(list_meses[6])
-print(list_meses[-1]) #último
-print(list_meses[-2]) #penúltimo
-print(list_meses[1:4]) #imprime a partir do índice 1 até o 4-1 (não vai até o quarto)
-print(list_meses[2:]) #imprime a partir do índice 2 até o final
-print(list_meses[:5]) #imprime a partir do índice 0 até o 5-1 
+lista_numeros=[]
+
+for n in range(5):
+    num = input('Informe o número: ')
+    lista_numeros.append (num) # adiciona 
+
+  
+print(lista_numeros[0])
+lista_numeros[0] = 22 #altera a índice 0
+lista_numeros.pop() #pop deleta o último
+lista_numeros.pop(-2) #pop deleta o penúltimo
+lista_numeros.remove (30) # deleta o determinado valor / indice específico 
+del lista_numeros[0]
+print(lista_numeros)
